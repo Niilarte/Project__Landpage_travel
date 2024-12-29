@@ -33,8 +33,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    padding: 15px;
+    background-color: var(--primary-white);
+    padding: 0px;
 }
 
 .mainly {
@@ -43,7 +43,7 @@ body {
     gap: 20px; /* Espaçamento entre as sections */
     max-width: 900px; /* Largura máxima do container */
     margin: 0 auto; /* Centraliza o main horizontalmente */
-    padding: 0px 0px 25px 0px;
+    padding: 0px 0px 75px 0px;
     background-color: var(--primary-white);
 }
 
@@ -79,9 +79,9 @@ body {
 
 .mainly__img {
     max-width: 1950px; /* Limita a largura da imagem */
+    width: 50%;
     height: auto;
     border-radius: 8px;
-    padding: 0px 45px 0px 45px;
 }
 
 /* Abaixo */
@@ -149,12 +149,24 @@ body {
 
 .boardB__img {
     width: 117px;
-    padding: 5px 25px 5px 25px;
+    padding: 5px 5px 5px 25px;
 }
 
 .boardB__title {
-    padding: 15px 25px 15px 25px;
+    padding: 15px 25px 15px 15px;
     font-family: var(--secundary-font);
     color: var(--primary-white);
     font-size: 25px;
+}
+
+.boardB__title--Linkedin:hover {
+    color: #0077b5;
+}
+
+.boardB__title--Twitter:hover {
+    color: #1da1f2;
+}
+
+.boardB__title--Twitch:hover {
+    color: #9146ff;
 }

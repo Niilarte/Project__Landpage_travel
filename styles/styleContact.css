@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&family=Mooli:wght@100;300;400;700;900&display=swap');
+
+:root {
+    --primary-white: #FFFFFF;
+    --primary-black: #000000;
+    --secundary-gray: #E1E1E1;
+    --black-gray: #BABABA;
+
+    --primary-font: 'Mooli', sans-serif;
+    --secundary-font: 'Montserrat', sans-serif;
+}
+
+.headB {
+    display: flex;
+    justify-content: flex-end;
+    gap: 17px;
+    padding: 35px 45px 75px 0px;
+}
+
+.headB__button {
+    font-family: var(--secundary-font);
+    font-size: 19px;
+    color: var(--primary-black);
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boardB {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 25px 5px 5px 5px;
+    background-color: var(--black-gray);
+}
+
+.boardB__img {
+    width: 117px;
+    padding: 5px 5px 5px 25px;
+}
+
+.boardB__title {
+    padding: 15px 25px 15px 15px;
+    font-family: var(--secundary-font);
+    color: var(--primary-white);
+    font-size: 25px;
+}
+
+.boardB__title--Linkedin:hover {
+    color: #0077b5;
+}
+
+.boardB__title--Twitter:hover {
+    color: #1da1f2;
+}
+
+.boardB__title--Twitch:hover {
+    color: #9146ff;
+}
