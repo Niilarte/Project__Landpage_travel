@@ -4,6 +4,7 @@
     --primary-white: #FFFFFF;
     --primary-black: #000000;
     --secundary-gray: #E1E1E1;
+    --terciary-gray: #e2e0e0;
     --black-gray: #BABABA;
 
     --primary-font: 'Mooli', sans-serif;
@@ -30,6 +31,112 @@
     box-sizing: border-box;
 }
 
+.mainly {
+        display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 25px 0px 45px 0px;
+    background-color: var(--terciary-gray);
+    margin-bottom: 40px;
+}
+
+.mainly {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.mainly__content__title {
+    text-align: center;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.mainly__content__imgs {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.mainly__img {
+    width: 32%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.mainly__subtitles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.mainly__content__subtitle {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    flex: 1;
+}
+
+.mainly__content__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.mainly__content__list__package {
+    list-style-type: none;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.mainly__content__list__package li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.mainly__content__list__package li:last-child {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.mainly__content__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.mainly__content__button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    flex: 1 1 30%;
+    max-width: 300px;
+}
+
+.mainly__content__button:hover {
+    background-color: #0056b3;
+}
+
 .boardB {
     display: flex;
     flex-direction: row;
@@ -38,6 +145,7 @@
     gap: 2px;
     padding: 25px 5px 5px 5px;
     background-color: var(--black-gray);
+    margin-top: 40px;
 }
 
 .boardB__img {
