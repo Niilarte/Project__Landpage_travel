@@ -24,7 +24,62 @@
     text-decoration: none;
 }
 
-/* Reset básico */
+.headB__button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.headB__img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.user-menu {
+    visibility: hidden;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.user-menu.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.user-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-menu ul li {
+    margin: 10px 0;
+}
+
+.user-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.user-menu ul li a:hover {
+    color: #007bff;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -39,55 +94,51 @@ body {
 
 .mainly {
     display: flex;
-    flex-direction: column; /* Elementos organizados na vertical */
-    gap: 20px; /* Espaçamento entre as sections */
-    max-width: 900px; /* Largura máxima do container */
-    margin: 0 auto; /* Centraliza o main horizontalmente */
+    flex-direction: column;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
     padding: 0px 0px 75px 0px;
     background-color: var(--primary-white);
 }
 
-/* Estilização do topo */
 .mainly__top {
     display: flex;
-    flex-direction: column; /* Elementos organizados na vertical */
+    flex-direction: column;
     gap: 15px;
     padding: 15px 15px 15px 15px;
     background-color: var(--secundary-gray);
 }
 
-/* Frases no topo */
 .mainly__top__praft {
     display: flex;
-    justify-content: space-between; /* Frases nas extremidades do bloco */
+    justify-content: space-between;
     align-items: center;
     font-size: 14px;
     color: #555555;
 }
 
-/* Texto e imagem ao lado */
 .mainly__top__paragraph {
     display: flex;
-    flex-direction: row; /* Elementos lado a lado */
-    gap: 20px; /* Espaçamento entre texto e imagem */
+    flex-direction: row;
+    gap: 20px;
     align-items: center;
 }
 
 .mainly__top__paragraph section {
-    flex: 1; /* O texto ocupa o espaço necessário */
+    flex: 1;
 }
 
 .mainly__img {
-    max-width: 1950px; /* Limita a largura da imagem */
+    max-width: 1950px;
     width: 50%;
     height: auto;
     border-radius: 8px;
 }
 
-/* Abaixo */
 .mainly__below {
     display: flex;
-    flex-direction: row-reverse; /* Texto e imagem lado a lado */
+    flex-direction: row-reverse;
     gap: 20px;
     align-items: center;
     background-color: var(--black-gray);

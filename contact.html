@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/styleContact.css">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <title>Contact</title>
 </head>
 <body>
@@ -12,19 +13,27 @@
         <a class="headB__button" href="about.html">About</a>
         <a class="headB__button" href="Dshoppe.html">Services</a>
         <a class="headB__button" href="contact.html">Contact</a>
+        <img class="headB__img" src="./imgs/user-profile.png" alt="O botão para entrar no seu user profile" id="user-profile">
+        <div class="user-menu" id="user-menu">
+            <ul>
+                <li><a href="#">Configurações</a></li>
+                <li><a href="#">Carrinho de Compras</a></li>
+                <li><a href="#">Sair</a></li>
+            </ul>
+        </div>
    </header>
    <main class="mainly">
      <section class="mainly__content">
           <img class="mainly__img" src="./imgs/gran1.webp" alt="Foto de uma rua esverdeada na cidade de gramado">
           <section class="mainly__content__form">
-               <form>
+               <form id="contact-form">
                     <h1 class="mainly__content__form__title">Contato</h1>
                     <h3 class="mainly__content__form__tubtitle">Nome Completo:</h3>
-                    <input class="mainly__content__form__button" type="text">
+                    <input class="mainly__content__form__button" type="text" name="full-name">
                     <h3 class="mainly__content__form__tubtitle">E-mail:</h3>
-                    <input class="mainly__content__form__button" type="email">
+                    <input class="mainly__content__form__button" type="email" name="email">
                     <h3 class="mainly__content__form__tubtitle">Telefone:</h3>
-                    <input class="mainly__content__form__button" type="number">
+                    <input class="mainly__content__form__button" type="number" name="phone">
                     <h3 class="mainly__content__form__tubtitle">Assunto</h3>
                     <h4 class="mainly__content__form__quititle">Exemplos:</h4>
                     <ul>
@@ -34,19 +43,19 @@
                          <li><p class="mainly__content__form__text">Outros</p></li>
                     </ul>
                     <h3 class="mainly__content__form__tubtitle">Mensagem:</h3>
-                    <textarea class="mainly__content__form__button" ></textarea>
+                    <textarea class="mainly__content__form__button" name="message"></textarea>
                     <h2 class="mainly__content__form__subtitle">Você gostaria de receber promoçôes e novidades da Rota dos Sonhos por Email?</h2>
-                    <select class="mainly__content__form__selection">
-                         <option class="mainly__content__form__selection__options">Sim</option>
-                         <option class="mainly__content__form__selection__options">Não</option>
+                    <select class="mainly__content__form__selection" name="promotions">
+                         <option class="mainly__content__form__selection__options" value="sim">Sim</option>
+                         <option class="mainly__content__form__selection__options" value="não">Não</option>
                     </select>
                     <h2 class="mainly__content__form__subtitle">Como prefere ser contatado?</h2>
-                    <select class="mainly__content__form__selection">
-                         <option class="mainly__content__form__selection__options">E-mail</option>
-                         <option class="mainly__content__form__selection__options">Telefone</option>
+                    <select class="mainly__content__form__selection" name="contact-method">
+                         <option class="mainly__content__form__selection__options" value="E-mail">E-mail</option>
+                         <option class="mainly__content__form__selection__options" value="Telefone">Telefone</option>
                     </select>
                     <h3 class="mainly__content__form__tubtitle">Data de interesse para viagem:</h3>
-                    <input class="mainly__content__form__button" type="date">
+                    <input class="mainly__content__form__button" type="date" name="travel-date">
                     <button class="mainly__content__form__button" type="submit">Enviar</button>
                </form>
           </section>
@@ -60,5 +69,7 @@
         <img class="boardB__img" src="./imgs/twitchS.png" alt="A logo da empresa Twitch">
         <h1 class="boardB__title boardB__title--Twitch">Twitch</h1>
    </footer>
+     <script type="text/javascript" src="./scripts/send.js"></script>
+     <script type="text/javascript" src="./scripts/profile.js"></script>
 </body>
 </html>
