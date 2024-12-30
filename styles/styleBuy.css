@@ -5,7 +5,14 @@
     --primary-black: #000000;
     --secundary-gray: #E1E1E1;
     --black-gray: #BABABA;
+    --primary-bg-color: #f9f9f9;
+    --primary-text-color: #333;
+    --secondary-bg-color: #fff;
+    --accent-color: #3498db;
+    --border-color: #e0e0e0;
 
+
+    --font-family: 'Arial', sans-serif;
     --primary-font: 'Mooli', sans-serif;
     --secundary-font: 'Montserrat', sans-serif;
 }
@@ -106,102 +113,114 @@ body {
     padding: 0px;
 }
 
-.mainly {
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+main.mainly {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mainly__content {
+    background-color: var(--secondary-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.mainly__listBuy {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0px 0px 75px 0px;
-    background-color: var(--primary-white);
+    background-color: var(--secondary-bg-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.mainly__top {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px 15px 15px 15px;
-    background-color: var(--secundary-gray);
-}
-
-.mainly__top__praft {
+.mainly__listBuy .item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 14px;
-    color: #555555;
+    padding: 15px;
+    border-bottom: 1px solid var(--border-color);
 }
 
-.mainly__top__paragraph {
+.mainly__listBuy .item:last-child {
+    border-bottom: none;
+}
+
+.mainly__listBuy .item img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.mainly__listBuy .item .item-details {
+    flex-grow: 1;
+    margin-left: 15px;
+}
+
+.mainly__listBuy .item .item-details h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--primary-text-color);
+}
+
+.mainly__listBuy .item .item-details p {
+    margin: 5px 0;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.mainly__listBuy .item .item-price {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+.mainly__pricepay {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
+    justify-content: space-between;
     align-items: center;
-}
-
-.mainly__top__paragraph section {
-    flex: 1;
-}
-
-.mainly__img {
-    max-width: 1950px;
-    width: 50%;
-    height: auto;
+    background-color: var(--secondary-bg-color);
+    padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.mainly__below {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 20px;
-    align-items: center;
-    background-color: var(--black-gray);
+.mainly__pricepay .total-price {
+    font-size: 1.5rem;
+    color: var(--primary-text-color);
 }
 
-.mainly__below__info {
-    flex: 1;
-    padding: 0px 65px 45px 65px;
+.mainly__pricepay .checkout-button {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.mainly__top__textA {
-    font-family: var(--primary-font);
-    color: var(--primary-black);
+.mainly__pricepay .checkout-button:hover {
+    background-color: #2980b9;
 }
 
-.mainly__top__paragraph__info {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-    padding: 0px 65px 65px 45px;
+.mainly__pricepay .checkout-button:active {
+    background-color: #1c6a8c;
 }
 
-.mainly__top__paragraph__info__title {
-    font-family: var(--primary-font);
-    font-size: 48px;
-    color: var(--black-gray);
-    padding: 5px 0px 0px 35px;
-}
-
-.mainly__top__paragraph__info__text {
-    font-family: var(--secundary-font);
-    color: var(--primary-black);
-    font-size: 22px;
-    font-weight: 300;
-}
-
-.mainly__below__info__title {
-    font-family: var(--primary-font);
-    font-size: 48px;
-    color: var(--secundary-gray);
-    padding: 35px 35px 35px 0px;
-}
-
-.mainly__below__info__text {
-    font-family: var(--secundary-font);
-    color: var(--primary-white);
-    font-size: 22px;
-    font-weight: 300;
-}
 
 .boardB {
     display: flex;

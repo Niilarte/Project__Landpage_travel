@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/settingsC.css">
+    <title>Configurations</title>
+</head>
+<body>
+    <header class="headB">
+        <a class="headB__button" href="index.html">Home</a>
+        <a class="headB__button" href="about.html">About</a>
+        <a class="headB__button" href="Dshoppe.html">Services</a>
+        <a class="headB__button" href="contact.html">Contact</a>
+        <img class="headB__img" src="./imgs/user-profile.png" alt="O botão para entrar no seu user profile" id="user-profile">
+        <div class="user-menu" id="user-menu">
+            <ul>
+                <li><a href="#">Perfil</a></li>
+                <li><a href="settings.html">Configurações</a></li>
+                <li><a href="purchases.html">Carrinho de Compras</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="mainly">
+    <section class="mainly__items">
+        <h2 class="mainly__items__subtitle">Configurações Gerais</h2>
+        <div id="settings-content">
+            <p>Selecione uma opção de configuração no painel à direita para visualizar ou alterar.</p>
+
+        </div>
+    </section>
+
+    <aside class="mainly__options">
+        <h3>Opções de Configuração</h3>
+        <ul>
+            <li><button data-option="profile">Perfil</button></li>
+            <li><button data-option="security">Segurança</button></li>
+            <li><button data-option="notifications">Notificações</button></li>
+            <li><button data-option="appearance">Aparência</button></li>
+        </ul>
+    </aside>
+    </main>
+    <footer class="boardB">
+        <img class="boardB__img" src="./imgs/linkedinS.png" alt="A logo da empresa linkedin">
+        <h1 class="boardB__title boardB__title--Linkedin">Linkedin</h1>
+        <img class="boardB__img" src="./imgs/twitterS.png" alt="A logo da empresa chamada x">
+        <h1 class="boardB__title boardB__title--Twitter">Twitter</h1>
+        <img class="boardB__img" src="./imgs/twitchS.png" alt="A logo da empresa Twitch">
+        <h1 class="boardB__title boardB__title--Twitch">Twitch</h1>
+    </footer>
+    <script type="text/javascript" src="./scripts/profile.js"></script>
+    <script type="text/javascript" src="./scripts/optionsProfile.js"></script>
+    <script type="text/javascript" src="./scripts/settingsData.js"></script>
+    <script src="./scripts/theme.js" defer></script>
+</body>
+</html>

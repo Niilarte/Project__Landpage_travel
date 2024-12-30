@@ -11,6 +11,22 @@
     --secundary-font: 'Montserrat', sans-serif;
 }
 
+[data-theme='light'] {
+    --primary-white: #FFFFFF;
+    --primary-black: #000000;
+    --secundary-gray: #E1E1E1;
+    --terciary-gray: #e2e0e0;
+    --black-gray: #BABABA;
+}
+
+[data-theme='dark'] {
+    --primary-white: #1E1E1E;
+    --primary-black: #FFFFFF;
+    --secundary-gray: #2A2A2A;
+    --terciary-gray: #adacac;
+    --black-gray: #e6e6e6;
+}
+
 .headB {
     display: flex;
     justify-content: flex-end;
@@ -26,8 +42,8 @@
 }
 
 .headB__img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     border-radius: 50%;
     transition: transform 0.3s ease;
@@ -38,8 +54,8 @@
     position: absolute;
     top: 70px;
     right: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: var(--primary-white);
+    border: 1px solid var(--secundary-gray);
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -65,7 +81,7 @@
 
 .user-menu ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--primary-black);
     font-size: 16px;
 }
 
@@ -79,6 +95,13 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-white);
+    padding: 0px;
+}
+
 
 .mainly {
         display: flex;
@@ -95,13 +118,14 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px;
+    background-color: var(--secundary-gray);
 }
 
 .mainly__content__title {
     text-align: center;
     font-size: 36px;
     font-family: Arial, sans-serif;
-    color: #333;
+    color: var(--black-gray);
     margin-bottom: 40px;
 }
 
@@ -128,7 +152,7 @@
     font-size: 24px;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    color: #333;
+    color: var(--terciary-gray);
     text-align: center;
     flex: 1;
 }
@@ -143,7 +167,7 @@
 .mainly__content__list__package {
     list-style-type: none;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: var(--terciary-gray);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     flex: 1;
@@ -151,7 +175,7 @@
 
 .mainly__content__list__package li {
     font-size: 16px;
-    color: #555;
+    color: var(--primary-black);
     margin-bottom: 10px;
 }
 
@@ -171,7 +195,7 @@
 
 .mainly__content__button {
     background-color: #007bff;
-    color: white;
+    color: var(--primary-white);
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
