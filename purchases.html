@@ -26,7 +26,7 @@
             <h2>Bem-vindo ao seu Carrinho de Compras</h2>
             <p>Confira os itens abaixo e finalize sua compra.</p>
         </section>
-        <section class="mainly__listBuy">
+        <section class="mainly__listBuy" id="cart-items">
             <div class="item">
                 <img src="./imgs/gran1.webp" alt="Produto 1">
                 <div class="item-details">
@@ -35,17 +35,9 @@
                 </div>
                 <div class="item-price">R$ 50,00</div>
             </div>
-            <div class="item">
-                <img src="./imgs/gran1.webp" alt="Produto 2">
-                <div class="item-details">
-                    <h4>Produto 2</h4>
-                    <p>Descrição curta do produto.</p>
-                </div>
-                <div class="item-price">R$ 30,00</div>
-            </div>
         </section>
         <section class="mainly__pricepay">
-            <div class="total-price">Total: R$ 80,00</div>
+            <div class="total-price" id="total-price">Total: R$ 0,00</div>
             <button class="checkout-button">Finalizar Compra</button>
         </section>
     </main>
@@ -59,5 +51,6 @@
     </footer>
     <script type="text/javascript" src="./scripts/profile.js"></script>
     <script src="./scripts/theme.js" defer></script>
+    <script src="./scripts/depot.js"></script>
 </body>
 </html>

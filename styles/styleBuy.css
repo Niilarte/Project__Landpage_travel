@@ -22,6 +22,12 @@
     --primary-black: #000000;
     --secundary-gray: #E1E1E1;
     --black-gray: #BABABA;
+    --primary-bg-color: #f9f9f9;
+    --primary-text-color: #333;
+    --secondary-bg-color: #fff;
+    --accent-color: #3498db;
+    --border-color: #e0e0e0;
+
 }
 
 [data-theme='dark'] {
@@ -29,6 +35,12 @@
     --primary-black: #FFFFFF;
     --secundary-gray: #2A2A2A;
     --black-gray: #e6e6e6;
+    --primary-bg-color: #222020;
+    --primary-text-color: #ece8e8;
+    --secondary-bg-color: #161515;
+    --accent-color: #3498db;
+    --border-color: #474444;
+
 }
 
 .headB {
@@ -136,6 +148,14 @@ main.mainly {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+.mainly__content h2 {
+    color: var(--primary-black);
+}
+
+.mainly__content p {
+    color: var(--primary-black);
+}
+
 .mainly__listBuy {
     display: flex;
     flex-direction: column;
@@ -221,6 +241,43 @@ main.mainly {
     background-color: #1c6a8c;
 }
 
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Detalhes do item (nome e descrição) */
+.item-details {
+    flex: 1; /* Ocupa o espaço disponível */
+    margin-right: 15px; /* Espaçamento entre detalhes e preço */
+}
+
+/* Estilo do preço */
+.item-price {
+    font-size: 16px;
+    margin-right: 20px; /* Espaçamento entre o preço e o botão */
+    white-space: nowrap; /* Impede quebra de linha no preço */
+}
+
+/* Botão de remover */
+.remove-item {
+    background-color: #e74c3c; /* Vermelho para destaque */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no botão de remover */
+.remove-item:hover {
+    background-color: #c0392b;
+}
 
 .boardB {
     display: flex;

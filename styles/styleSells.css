@@ -152,7 +152,7 @@ body {
     font-size: 24px;
     font-family: Arial, sans-serif;
     font-weight: bold;
-    color: var(--terciary-gray);
+    color: var(--primary-black);
     text-align: center;
     flex: 1;
 }
@@ -213,6 +213,12 @@ body {
 .mainly__content__button.clicked {
     background-color: #ff6347;
 }
+
+.mainly__content__button:disabled {
+    background-color: #ff6347;
+    cursor: not-allowed;
+}
+
 
 .boardB {
     display: flex;
