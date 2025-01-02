@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+    // observer (Possivelmente vai ser tirado depois)
     observer.observe(document.body, { childList: true, subtree: true });
 
     function initializeThemeForm(themeForm) {
