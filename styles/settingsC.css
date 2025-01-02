@@ -29,18 +29,15 @@
 .headB {
     display: flex;
     justify-content: flex-end;
-    gap: 17px;
-    padding: 35px 45px 75px 0px;
+    gap: 1rem;
+    padding: 2rem 3rem 4rem 0;
 }
 
 .headB__button {
     font-family: var(--secundary-font);
-    font-size: 19px;
+    font-size: 1.2rem;
     color: var(--primary-black);
     text-decoration: none;
-}
-
-.headB__button {
     background: none;
     border: none;
     padding: 0;
@@ -48,8 +45,9 @@
 }
 
 .headB__img {
-    width: 30px;
-    height: 30px;
+    width: 10%;
+    max-width: 50px;
+    height: auto;
     cursor: pointer;
     border-radius: 50%;
     transition: transform 0.3s ease;
@@ -59,15 +57,17 @@
     visibility: hidden;
     position: absolute;
     top: 70px;
-    right: 20px;
+    right: 1rem;
     background-color: var(--primary-white);
     border: 1px solid var(--secundary-gray);
     border-radius: 5px;
-    padding: 10px;
+    padding: 1rem;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease, top 0.3s ease;
+    width: 90%;
+    max-width: 300px;
 }
 
 .user-menu.show {
@@ -82,19 +82,18 @@
 }
 
 .user-menu ul li {
-    margin: 10px 0;
+    margin: 0.5rem 0;
 }
 
 .user-menu ul li a {
     text-decoration: none;
     color: var(--primary-black);
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .user-menu ul li a:hover {
     color: #007bff;
 }
-
 
 * {
     margin: 0;
@@ -141,7 +140,7 @@ body {
 }
 
 .mainly__items h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 20px;
     color: var(--black-gray);
     border-bottom: 2px solid #ddd;
@@ -155,7 +154,7 @@ form {
 }
 
 form label {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     color: #555;
 }
@@ -165,7 +164,7 @@ form input[type="email"],
 form input[type="password"],
 form input[type="file"] {
     padding: 10px;
-    font-size: 14px;
+    font-size: 0.8rem;
     border: 1px solid var(--secundary-gray);
     border-radius: 5px;
     outline: none;
@@ -181,7 +180,7 @@ form input[type="file"]:focus {
 
 form button[type="submit"] {
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 1rem;
     color: var(--primary-white);
     background-color: #007bff;
     border: none;
@@ -211,7 +210,7 @@ form label:not(:last-of-type) {
 }
 
 .mainly__items h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: var(--black-gray);
     text-align: center;
     margin-top: 50px;
@@ -223,11 +222,11 @@ form label:not(:last-of-type) {
     }
 
     .mainly__items h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     form button[type="submit"] {
-        font-size: 14px;
+        font-size: 0.8rem;
         padding: 8px 15px;
     }
 }
@@ -243,7 +242,7 @@ form label:not(:last-of-type) {
 
 .mainly__options h3 {
     margin-bottom: 15px;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: var(--primary-black);
 }
 
@@ -273,27 +272,37 @@ form label:not(:last-of-type) {
     background-color: #0056b3;
 }
 
-
 .boardB {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 2px;
-    padding: 25px 5px 5px 5px;
+    gap: 1rem;
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
     background-color: var(--black-gray);
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.boardB__img,
+.boardB__title {
+    flex: 1 1 auto;
+    min-width: 150px;
+    max-width: 300px;
+    margin: 0.5rem; 
 }
 
 .boardB__img {
-    width: 117px;
-    padding: 5px 5px 5px 25px;
+    width: auto;
+    height: auto;
 }
 
 .boardB__title {
-    padding: 15px 25px 15px 15px;
     font-family: var(--secundary-font);
     color: var(--primary-white);
-    font-size: 25px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0.5rem;
 }
 
 .boardB__title--Linkedin:hover {
@@ -306,4 +315,144 @@ form label:not(:last-of-type) {
 
 .boardB__title--Twitch:hover {
     color: #9146ff;
+}
+
+@media (max-width: 1024px) {
+    .headB {
+        padding: 1rem 2rem;
+    }
+
+    .headB__button {
+        font-size: 1rem;
+    }
+
+    .headB__img {
+        width: 15%;
+        max-width: 45px;
+    }
+
+    .mainly__items {
+        padding: 15px;
+    }
+
+    .mainly__items h3 {
+        font-size: 1.5rem;
+    }
+
+    .boardB {
+        padding: 1rem;
+    }
+
+    .boardB__img,
+    .boardB__title {
+        min-width: 120px;
+        max-width: 250px;
+    }
+
+    .mainly__options {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainly__options ul li button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .headB {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .headB__button {
+        font-size: 1rem;
+    }
+
+    .headB__img {
+        width: 25%;
+        max-width: 40px;
+    }
+
+    .mainly__items {
+        padding: 10px;
+    }
+
+    .mainly__items h3 {
+        font-size: 1.25rem;
+    }
+
+    .boardB {
+        padding: 1rem 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .boardB__img,
+    .boardB__title {
+        min-width: 100px;
+        max-width: 200px;
+    }
+
+    .user-menu {
+        width: 100%;
+        max-width: 280px;
+        right: 0.5rem;
+    }
+
+    .mainly__options {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainly__options ul li button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .headB {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .headB__img {
+        width: 30%;
+        max-width: 40px;
+    }
+
+    .mainly__items {
+        padding: 10px;
+    }
+
+    .mainly__items h3 {
+        font-size: 1.125rem;
+    }
+
+    .boardB {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .boardB__img,
+    .boardB__title {
+        min-width: 100%;
+        max-width: 100%;
+    }
+
+    .mainly__options {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mainly__options ul li button {
+        font-size: 14px;
+    }
 }

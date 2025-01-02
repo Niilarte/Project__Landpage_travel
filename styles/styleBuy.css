@@ -308,3 +308,81 @@ main.mainly {
 .boardB__title--Twitch:hover {
     color: #9146ff;
 }
+
+@media (max-width: 768px) {
+    main.mainly {
+        padding: 2rem 1rem;
+    }
+
+    .mainly__content h2 {
+        font-size: 1.75rem;
+    }
+
+    .mainly__content p {
+        font-size: 1rem;
+    }
+
+    .mainly__listBuy .item img {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .mainly__listBuy .item .item-details h4 {
+        font-size: 1rem;
+    }
+
+    .mainly__listBuy .item .item-price {
+        font-size: 1.1rem;
+    }
+
+    .mainly__pricepay .total-price {
+        font-size: 1.25rem;
+    }
+
+    .mainly__pricepay .checkout-button {
+        font-size: 1rem;
+    }
+
+    .boardB__title {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main.mainly {
+        padding: 1.5rem 1rem;
+    }
+
+    .mainly__content h2 {
+        font-size: 1.5rem;
+    }
+
+    .mainly__content p {
+        font-size: 0.875rem;
+    }
+
+    .mainly__listBuy .item img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .mainly__listBuy .item .item-details h4 {
+        font-size: 0.9rem;
+    }
+
+    .mainly__listBuy .item .item-price {
+        font-size: 1rem;
+    }
+
+    .mainly__pricepay .total-price {
+        font-size: 1rem;
+    }
+
+    .mainly__pricepay .checkout-button {
+        font-size: 1rem;
+    }
+
+    .boardB__title {
+        font-size: 1.125rem;
+    }
+}

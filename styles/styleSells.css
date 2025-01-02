@@ -254,3 +254,83 @@ body {
 .boardB__title--Twitch:hover {
     color: #9146ff;
 }
+
+@media (max-width: 1024px) {
+    .mainly {
+        padding: 2rem;
+    }
+
+    .mainly__content__title {
+        font-size: 2rem;
+    }
+
+    .mainly__content__imgs {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .mainly__img {
+        width: 100%;
+    }
+
+    .mainly__subtitles {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .mainly__content__list {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .mainly__content__buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .mainly {
+        padding: 1.5rem;
+    }
+
+    .mainly__content__title {
+        font-size: 1.75rem;
+    }
+
+    .mainly__content__imgs {
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+
+    .mainly__img {
+        width: 100%;
+    }
+
+    .mainly__subtitles {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .mainly__content__subtitle {
+        font-size: 1.25rem;
+    }
+
+    .mainly__content__list {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .mainly__content__buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .boardB__img {
+        width: 6.75rem;
+    }
+
+    .boardB__title {
+        font-size: 1.25rem;
+    }
+}

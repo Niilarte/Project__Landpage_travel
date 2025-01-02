@@ -207,3 +207,99 @@ body {
 .boardB__title--Twitch:hover {
     color: #9146ff;
 }
+
+@media screen and (max-width: 1200px) {
+    :root {
+        --primary-font-size: 1.2rem;
+        --secundary-font-size: 1rem;
+    }
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+    .profile-info {
+        padding-left: 0;
+        text-align: center;
+    }
+    .profile-sections {
+        flex-direction: column;
+    }
+    .profile-about, .profile-posts {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --primary-font-size: 1rem;
+        --secundary-font-size: 0.9rem;
+    }
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-photo {
+        width: 100px;
+        height: 100px;
+    }
+    .profile-info {
+        padding-left: 0;
+        text-align: center;
+    }
+    .profile-about, .profile-posts {
+        padding: 10px;
+    }
+    .boardB {
+        flex-direction: column;
+        align-items: center;
+    }
+    .boardB__img {
+        width: 100px;
+        padding: 10px;
+    }
+    .boardB__title {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        --primary-font-size: 0.9rem;
+        --secundary-font-size: 0.8rem;
+    }
+    .profile-container {
+        padding: 15px;
+    }
+    .profile-header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile-photo {
+        width: 80px;
+        height: 80px;
+    }
+    .profile-info {
+        padding-left: 0;
+        text-align: center;
+    }
+    .profile-about, .profile-posts {
+        padding: 8px;
+    }
+    .boardB {
+        flex-direction: column;
+        align-items: center;
+    }
+    .boardB__img {
+        width: 80px;
+        padding: 10px;
+    }
+    .boardB__title {
+        font-size: 1rem;
+    }
+}

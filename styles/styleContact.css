@@ -238,3 +238,123 @@ body {
 .boardB__title--Twitch:hover {
     color: #9146ff;
 }
+
+@media (max-width: 768px) {
+    :root {
+        --primary-font-size: 1rem; /* 16px */
+        --secundary-font-size: 0.875rem; /* 14px */
+    }
+
+    .mainly {
+        padding: 1rem;
+    }
+
+    .mainly__content {
+        flex-direction: column;
+    }
+
+    .mainly__content__form {
+        padding: 1.25rem;
+    }
+
+    .mainly__content__form__title {
+        font-size: 2.25rem; /* 36px */
+    }
+
+    .mainly__content__form__subtitle {
+        font-size: 1.5rem; /* 24px */
+    }
+
+    .mainly__content__form__tubtitle {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .mainly__content__form__quititle {
+        font-size: 1.125rem; /* 18px */
+    }
+
+    .mainly__content__form__text {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .mainly__img {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .mainly__content__form__button {
+        font-size: 0.875rem; /* 14px */
+        padding: 0.5rem 1rem; /* 8px 16px */
+    }
+
+    .mainly__content__form__selection,
+    .mainly__content__form__selection__options {
+        font-size: 0.875rem; /* 14px */
+        padding: 0.5rem 1rem; /* 8px 16px */
+    }
+
+    .boardB__img {
+        width: 6rem; /* 96px */
+    }
+
+    .boardB__title {
+        font-size: 1.25rem; /* 20px */
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --primary-font-size: 0.875rem; /* 14px */
+        --secundary-font-size: 0.75rem; /* 12px */
+    }
+
+    .mainly {
+        padding: 1rem;
+    }
+
+    .mainly__content__form__title {
+        font-size: 2rem; /* 32px */
+    }
+
+    .mainly__content__form__subtitle {
+        font-size: 1.25rem; /* 20px */
+    }
+
+    .mainly__content__form__tubtitle {
+        font-size: 1rem; /* 16px */
+    }
+
+    .mainly__content__form__quititle {
+        font-size: 0.875rem; /* 14px */
+    }
+
+    .mainly__content__form__text {
+        font-size: 0.75rem; /* 12px */
+    }
+
+    .mainly__img {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .mainly__content__form__button {
+        font-size: 0.75rem; /* 12px */
+        padding: 0.5rem 1rem; /* 8px 16px */
+    }
+
+    .mainly__content__form__selection,
+    .mainly__content__form__selection__options {
+        font-size: 0.75rem; /* 12px */
+        padding: 0.5rem 1rem; /* 8px 16px */
+    }
+
+    .boardB__img {
+        width: 5.25rem; /* 84px */
+    }
+
+    .boardB__title {
+        font-size: 1rem; /* 16px */
+    }
+}

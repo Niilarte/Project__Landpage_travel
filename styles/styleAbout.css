@@ -220,3 +220,69 @@ body {
 .boardB__title--Twitch:hover {
     color: #9146ff;
 }
+
+@media (max-width: 650px) {
+    .mainly {
+        padding: 70px 0 100px;
+    }
+
+    .mainly__content__title {
+        font-size: 72px;
+    }
+
+    .mainly__content__text {
+        font-size: 16px;
+        width: 900px;
+    }
+
+    .mainly__img {
+        width: 400px;
+        height: 350px;
+    }
+
+    .mainly__under__content > div {
+        flex-basis: calc(25% - 20px);
+    }
+
+    .boardB {
+        padding: 35px 10px;
+    }
+
+    .boardB__img {
+        width: 160px;
+    }
+}
+
+@media (max-width: 576px) {
+    .headB {
+        padding: 20px 15px;
+        justify-content: space-between;
+    }
+
+    .mainly {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .mainly__content__title {
+        font-size: 28px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .mainly__content__subtitle {
+        font-size: 8px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .mainly__content__text {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .mainly__img {
+        width: 100%;
+        height: auto;
+    }
+}
