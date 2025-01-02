@@ -249,22 +249,19 @@ main.mainly {
     border-bottom: 1px solid #ccc;
 }
 
-/* Detalhes do item (nome e descrição) */
 .item-details {
-    flex: 1; /* Ocupa o espaço disponível */
-    margin-right: 15px; /* Espaçamento entre detalhes e preço */
+    flex: 1;
+    margin-right: 15px;
 }
 
-/* Estilo do preço */
 .item-price {
     font-size: 16px;
-    margin-right: 20px; /* Espaçamento entre o preço e o botão */
-    white-space: nowrap; /* Impede quebra de linha no preço */
+    margin-right: 20px;
+    white-space: nowrap;
 }
 
-/* Botão de remover */
 .remove-item {
-    background-color: #e74c3c; /* Vermelho para destaque */
+    background-color: #e74c3c;
     color: white;
     border: none;
     border-radius: 5px;
@@ -274,7 +271,6 @@ main.mainly {
     transition: background-color 0.3s ease;
 }
 
-/* Efeito de hover no botão de remover */
 .remove-item:hover {
     background-color: #c0392b;
 }

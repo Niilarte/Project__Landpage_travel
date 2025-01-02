@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles/styleBuy.css">
-    <title>shopping cart</title>
+    <link rel="stylesheet" type="text/css" href="./styles/styleProfile.css">
+    <title>Profile</title>
 </head>
 <body>
     <header class="headB">
@@ -21,24 +21,24 @@
             </ul>
         </div>
     </header>
-    <main class="mainly">
-        <section class="mainly__content">
-            <h2>Bem-vindo ao seu Carrinho de Compras</h2>
-            <p>Confira os itens abaixo e finalize sua compra.</p>
-        </section>
-        <section class="mainly__listBuy" id="cart-items">
-            <div class="item">
-                <img src="./imgs/gran1.webp" alt="Produto 1">
-                <div class="item-details">
-                    <h4>Produto 1</h4>
-                    <p>Descrição curta do produto.</p>
-                </div>
-                <div class="item-price">R$ 50,00</div>
+    <main class="profile-container">
+        <section class="profile-header">
+            <div class="profile-photo" id="profile-picture-container">
+                <img id="profile-picture" src="" alt="Foto de Perfil">
+            </div>
+            <div class="profile-info">
+                <p id="username"></p>
+                <p id="email"></p>
             </div>
         </section>
-        <section class="mainly__pricepay">
-            <div class="total-price" id="total-price">Total: R$ 0,00</div>
-            <button class="checkout-button">Finalizar Compra</button>
+        <section class="profile-sections">
+            <div class="profile-about">
+            </div>
+            <div class="profile-posts">
+            </div>
+        </section>
+
+        <section class="profile-footer">
         </section>
     </main>
     <footer class="boardB">
@@ -51,7 +51,6 @@
     </footer>
     <script type="text/javascript" src="./scripts/profile.js"></script>
     <script src="./scripts/theme.js" defer></script>
-    <script src="./scripts/depot.js"></script>
-    <script src="./scripts/sendproduts.js"></script>
+    <script src="./scripts/obtprofile.js"></script>
 </body>
 </html>

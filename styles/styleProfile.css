@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700;900&family=Mooli:wght@100;300;400;700;900&display=swap');
+
+:root {
+    --primary-white: #FFFFFF;
+    --primary-black: #000000;
+    --secundary-gray: #E1E1E1;
+    --black-gray: #BABABA;
+    --primary-bg-color: #a59d9d;
+
+    --primary-font: 'Mooli', sans-serif;
+    --secundary-font: 'Montserrat', sans-serif;
+}
+
+[data-theme='light'] {
+    --primary-white: #FFFFFF;
+    --primary-black: #000000;
+    --secundary-gray: #E1E1E1;
+    --black-gray: #BABABA;
+    --primary-bg-color: #a59d9d;
+}
+
+[data-theme='dark'] {
+    --primary-white: #1E1E1E;
+    --primary-black: #FFFFFF;
+    --secundary-gray: #2A2A2A;
+    --black-gray: #e6e6e6;
+    --primary-bg-color: #dbd5d5;
+}
+
+.headB {
+    display: flex;
+    justify-content: flex-end;
+    gap: 17px;
+    padding: 35px 45px 75px 0px;
+}
+
+.headB__button {
+    font-family: var(--secundary-font);
+    font-size: 19px;
+    color: var(--primary-black);
+    text-decoration: none;
+}
+
+.headB__button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.headB__img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.user-menu {
+    visibility: hidden;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: var(--primary-white);
+    border: 1px solid var(--secundary-gray);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.user-menu.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.user-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.user-menu ul li {
+    margin: 10px 0;
+}
+
+.user-menu ul li a {
+    text-decoration: none;
+    color: var(--primary-black);
+    font-size: 16px;
+}
+
+.user-menu ul li a:hover {
+    color: #007bff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-white);
+    padding: 0px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--black-gray);
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.profile-sections {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.profile-about {
+    flex: 1;
+    padding: 15px;
+    background-color: var(--primary-bg-color);
+    margin-right: 10px;
+    border-radius: 8px;
+}
+
+.profile-posts {
+    flex: 2;
+    padding: 15px;
+    background-color: var(--primary-bg-color);
+    margin-left: 10px;
+    border-radius: 8px;
+}
+
+.profile-footer {
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: var(--primary-bg-color);
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.boardB {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 25px 5px 5px 5px;
+    background-color: var(--black-gray);
+}
+
+.boardB__img {
+    width: 117px;
+    padding: 5px 5px 5px 25px;
+}
+
+.boardB__title {
+    padding: 15px 25px 15px 15px;
+    font-family: var(--secundary-font);
+    color: var(--primary-white);
+    font-size: 25px;
+}
+
+.boardB__title--Linkedin:hover {
+    color: #0077b5;
+}
+
+.boardB__title--Twitter:hover {
+    color: #1da1f2;
+}
+
+.boardB__title--Twitch:hover {
+    color: #9146ff;
+}
